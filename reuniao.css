@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chamada {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.video-principal {
+  flex: 1;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video-principal p {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0,0,0,0.6);
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.video-mini {
+  width: 200px;
+  height: 120px;
+  background: #333;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-mini p {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background: rgba(0,0,0,0.5);
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.controles {
+  background: #10102f;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.controles button {
+  background: #333;
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 55px;       
+  height: 55px;      
+  border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controles button:hover {
+  background: #555;
+}
+
+button.sair {
+  background: red;
+}
+
+.video-mini img {
+  width: 30%;
+}
+
+.video-principal img {
+  width: 10%;
+}
+
+.video-mini:hover {
+  cursor: pointer;
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
