@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+html, body {
+    overflow-y: auto;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #064fc4;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.topo {
+    position: fixed;
+    width: 100%;
+    z-index: 9999; 
+}
+
+.pesquisas {
+    align-content: center;
+    position: relative;
+    width: 50%;
+}
+
+#icone-busca {
+    align-content: center;
+    position: absolute;
+    top: 40%;
+    margin-left: -2rem;
+}
+
+.input-pesquisa {
+    width: 80%;
+    height: 35%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.acoes{
+    display: flex;
+    margin-right: 2rem;
+}
+
+#fontes{
+    font-size: 2rem;
+    margin-left: 2rem;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#fontes:hover {
+    color: #00acee;
+    transform: scale(1.1); 
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10102f ;
+    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 115px;
+    
+}
+
+footer{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #0056a4;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 22rem;
+    height: 35rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    margin: 1rem;
+}
+
+
+.card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 15px;
+}
+
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.logo-empresa {
+    width: 15%;
+    margin-left: 2%;
+}
+
+.logo-empresa {
+    transition: transform 0.3s ease;
+}
+
+.logo-empresa:hover {
+    transform: translateX(0px) rotate(10deg);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.btn-card {
+  background-color: #0056a4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-card:hover {
+  background-color: #003f7d;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; 
+    z-index: 1;
+}
