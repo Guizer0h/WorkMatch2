@@ -262,3 +262,24 @@ main {
 .arrow:hover {
     background: #003f7d;
 }
+
+.card {
+    position: relative;
+    /* precisa disso pra estrela ficar dentro do card */
+}
+
+.favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: #ccc;
+    /* cor inicial (estrela apagada) */
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.favorite.active {
+    color: gold;
+    /* cor quando ativada */
+}
