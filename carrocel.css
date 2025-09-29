@@ -212,11 +212,11 @@ footer {
 
 
 .arrow.left {
-    left: -50px;
+    left: -60px;
 }
 
 .arrow.right {
-    right: -50px;
+    right: -60px;
 }
 
 html,
@@ -283,3 +283,12 @@ main {
     color: gold;
     /* cor quando ativada */
 }
+
+.card {
+  display: none; /* esconde todos por padrão */
+}
+
+.card.active {
+  display: block; /* mostra só o ativo */
+}
+
