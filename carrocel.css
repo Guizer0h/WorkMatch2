@@ -292,3 +292,40 @@ main {
   display: block; /* mostra só o ativo */
 }
 
+.menu-links {
+    display: flex;
+    align-items: center;
+    margin-left: -230px; /* afasta um pouco da logo */
+    margin-right: 50px;
+    gap: 40px; /* espaço entre os links */
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-links a:hover {
+    color: #00acee;
+}
+
+.acoes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acoes a i {
+    margin-left: 2rem; /* mesmo espaçamento dos outros */
+}
+
+.acoes a {
+    text-decoration: none; /* tira a linha */
+    color: inherit;        /* mantém a cor do ícone igual aos outros */
+    display: inline-flex;  /* deixa igual ao <i> */
+    align-items: center;
+    justify-content: center;
+}
