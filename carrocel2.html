@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrocel Funcionarios</title>
+    <link rel="stylesheet" href="carrocel2.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="logo">
+            <img src="logo2.png" alt=" imagem da logo" class="logo-empresa">
+            <p><strong> WORKMATCH</strong></p>
+        </div>
+
+        <nav class="menu-links">
+            <a href="funcionarios.html" class="nav-link">Lista de candidatos</a>
+        </nav>
+
+        <div class="pesquisas">
+            <input placeholder="pesquise aqui" class="input-pesquisa">
+            <i class="fa-solid fa-magnifying-glass" id="icone-busca"></i>
+
+        </div>
+        <div class="acoes">
+
+            <a href="reuniao.html" class="icon-link">
+                <i class="fa-solid fa-camera" id="fontes"></i>
+            </a>
+            <i class="fa-solid  fa-envelope" id="fontes"></i>
+            <i class="fa-solid fa-gear" id="fontes"></i>
+            <i class="fa-solid  fa-user-large" id="fontes"></i>
+            <i class="fa-solid fa-bars" id="fontes"></i>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="setas">
+            <button class="arrow left"><i class="fa-solid fa-chevron-left"></i></button>
+
+            <div class="card">
+                <img src="perfilempregado.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>
+
+                    </div>
+                    <div class="card-title">Mariana Lopes</div>
+                    <div class="card-description">
+                         Gerente de marketing com foco em growth; ama dados, criatividade e transformar cliques em conversão.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempresa.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>
+
+                    </div>
+                    <div class="card-title">Rafael Menezes</div>
+                    <div class="card-description">
+                        Desenvolvedor full-stack com sólida atuação em back-end e experiência em usabilidade e design de sistemas.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempresa.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Lucas Carvalho</div>
+                    <div class="card-description">
+                        Coordenador de operações com expertise em logística, controle de processos e otimização de recursos.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempregado.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Sofia Andrade</div>
+                    <div class="card-description">
+                        Analista de Recursos Humanos especializada em cultura organizacional, diversidade e gestão de pessoas.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempregado.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Beatriz Nogueira</div>
+                    <div class="card-description">
+                        Especialista em UX/UI focada em acessibilidade; transforma produtos em experiências simples e inclusivas.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempresa.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Gustavo Prado</div>
+                    <div class="card-description">
+                        Executivo de vendas B2B com histórico de resultados consistentes e forte habilidade em negociação.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempregado.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Clara Barros</div>
+                    <div class="card-description">
+                         Jornalista multimídia com experiência em produção de conteúdo estratégico e gestão de comunicação digital.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempregado.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Larissa Costa</div>
+                    <div class="card-description">
+                       Profissional de design estratégico com atuação em growth, otimização de funis e soluções criativas para negócios.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempresa.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Mateus Ribeiro</div>
+                    <div class="card-description">
+                        Engenheiro de dados especializado em estruturação de pipelines, automação e escalabilidade de sistemas.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempregado.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Isabela Torres</div>
+                    <div class="card-description">
+                        Coordenadora de projetos com experiência em metodologias ágeis, gestão de equipes e entrega de...
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="perfilempresa.png" alt="Imagem do Card">
+                <div class="card-content">
+                    <div class="favorite">
+                        <i class="fa-solid fa-star estrela" onclick="favoritar(this)"></i>                    </div>
+                    <div class="card-title">Henrique Silva</div>
+                    <div class="card-description">
+                         Analista financeiro com sólida formação em análise de investimentos, previsão de resultados e controle de indicadores.
+                        <div class="card-buttons">
+                            <button class="btn-x">
+                                <img src="botaox.png" alt="Não aceitar">
+                            </button>
+                            <button class="btn-check">
+                                <img src="botaocheck.png" alt="Aceitar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="arrow right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+    </main>
+
+    <footer> Copyright 2025 © - WorkMatch™ </footer>
+
+    <script>
+        function favoritar(estrela) {
+            if (estrela.style.color !== "yellow") {
+                estrela.style.color = "yellow";
+            } else {
+                estrela.style.color = "gray";
+            }
+        }
+    </script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = Array.from(document.querySelectorAll('.card'));
+            if (!cards.length) {
+                console.warn('Nenhum .card encontrado');
+                return;
+            }
+
+            // inicializa índice (se algum já tiver .active, usa ele; senão usa 0)
+            let currentIndex = cards.findIndex(c => c.classList.contains('active'));
+            if (currentIndex === -1) currentIndex = 0;
+
+            // garante que só o atual tenha .active
+            cards.forEach(c => c.classList.remove('active'));
+            cards[currentIndex].classList.add('active');
+
+            function showCard(index) {
+                cards[currentIndex].classList.remove('active');
+                currentIndex = (index + cards.length) % cards.length;
+                cards[currentIndex].classList.add('active');
+            }
+            function showNext() { showCard(currentIndex + 1); }
+            function showPrev() { showCard(currentIndex - 1); }
+
+            const left = document.querySelector('.arrow.left');
+            const right = document.querySelector('.arrow.right');
+            if (left) left.addEventListener('click', showPrev);
+            if (right) right.addEventListener('click', showNext);
+
+            // usa delegação pra pegar clique mesmo se o ícone/img for clicado
+            document.addEventListener('click', (e) => {
+                const btnX = e.target.closest('.btn-x');
+                const btnCheck = e.target.closest('.btn-check');
+
+                if (btnX) {
+                    e.preventDefault();
+                    showNext(); // aqui você pode trocar por showPrev() se quiser que X volte
+                } else if (btnCheck) {
+                    e.preventDefault();
+                    showNext();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
