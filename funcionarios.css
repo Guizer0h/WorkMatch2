@@ -195,3 +195,44 @@ footer{
     transform: scale(1.05);
 }
 
+.menu-links {
+    display: flex;
+    align-items: center;
+    margin-left: -230px; /* afasta um pouco da logo */
+    margin-right: 50px;
+    gap: 40px; /* espaço entre os links */
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-links a:hover {
+    color: #00acee;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;   /* alinha todos os ícones no centro vertical */
+    gap: 1px;             /* espaço entre eles */
+}
+
+.icon-link {
+    display: flex;         /* faz o link se comportar como bloco flex */
+    align-items: center;   /* centraliza o ícone dentro */
+    color: white;
+    text-decoration: none;
+}
+
+.icon-link i {
+    font-size: 20px;       /* garante tamanho igual ao dos outros */
+}
+
+.icon-link:hover i {
+    color: #00acee;        /* muda a cor no hover */
+}
+
